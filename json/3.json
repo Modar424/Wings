@@ -1,0 +1,122 @@
+{
+    "flight_number": "25DA4F1",
+    "type": "LEAVING",
+    "Economy_Class_Num": 200,
+    "Economy_Class_available": 200,
+    "Economy_Class_price": 80,
+    "Premium_Economy_Num": 80,
+    "Premium_Economy_available": 80,
+    "Premium_Economy_price": 110,
+    "Business_Class_Num": 40,
+    "Business_Class_available": 40,
+    "Business_Class_price": 180,
+    "First_Class_Num": 0,
+    "First_Class_Num_available": 0,
+    "First_Class_price": 0,
+    "counterpart": {
+        "country": "United Arab Emirates",
+        "city": "Abu Dhabi",
+        "Bio": "A modern capital blending luxury and tradition with sunny weather, UAE Dirham, Arabic and English, and Emirati dishes like machboos. Famous for beaches, culture, and world-class attractions.",
+        "slug": "abu-dhabi-united-arab-emirates",
+        "landmarks": "Burj Khalifa , Ferrari World Yas Island , Louvre Abu Dhabi",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/zucmmyj1htwvhxkk7h3a",
+        "static_rate": "5.00",
+        "avg_rate": "4.85",
+        "airports": [
+            {
+                "id": 2,
+                "name": "Zayed International Airport",
+                "destination": 2,
+                "rate": "4.50",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/m4krpysjpqvxqw3xd6c1"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To UAE for Syrian",
+                "Description": "travel To UAE for Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel To UAE for non-Syrian",
+                "Description": "travel To UAE for non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from UAE for Syrian",
+                "Description": "travel back from UAE for Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from UAE for UAE`s people",
+                "Description": "travel back from UAE for UAE`s people",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from UAE for non-Syrian",
+                "Description": "travel back from UAE for non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ]
+    },
+    "counterpart_airport": {
+        "id": 2,
+        "name": "Zayed International Airport",
+        "destination": 2,
+        "rate": "4.50",
+        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/m4krpysjpqvxqw3xd6c1"
+    },
+    "scheduled_departure": "2025-12-10T06:00:00Z",
+    "scheduled_arrival": "2025-12-10T06:30:00Z",
+    "gate": "A1",
+    "status": "scheduled"
+}

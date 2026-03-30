@@ -1,0 +1,147 @@
+{
+    "count": 31,
+    "next": "https://hosting-wings.onrender.com/api/flights/Airports/?page=2",
+    "previous": null,
+    "results": [
+        {
+            "id": 24,
+            "name": "Adolfo Suárez Madrid–Barajas Airport",
+            "destination": 16,
+            "rate": "0.00",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/wzxdzergjtvuxs1glxcc"
+        },
+        {
+            "id": 7,
+            "name": "Al Maktoum International Airport",
+            "destination": 5,
+            "rate": "4.30",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/piy5ynxslhyjvqdidjk6"
+        },
+        {
+            "id": 1,
+            "name": "Aleppo International Airport",
+            "destination": 1,
+            "rate": "4.00",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/btmx2qdoefhl7r0r3bcg"
+        },
+        {
+            "id": 31,
+            "name": "Amsterdam Schiphol Airport",
+            "destination": 21,
+            "rate": "4.30",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/z0xxff5qlajiq1n5vuuv"
+        },
+        {
+            "id": 25,
+            "name": "Barcelona–El Prat Airport",
+            "destination": 17,
+            "rate": "4.20",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/omeaxuxemglc8aevjjbw"
+        },
+        {
+            "id": 16,
+            "name": "Berlin Brandenburg Airport",
+            "destination": 12,
+            "rate": "4.00",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/zybbtwgkfvtlokqp3mam"
+        },
+        {
+            "id": 12,
+            "name": "Cairo International Airport",
+            "destination": 10,
+            "rate": "4.10",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/bvla9plgcph1hkmkkbx3"
+        },
+        {
+            "id": 6,
+            "name": "Dubai International Airport",
+            "destination": 5,
+            "rate": "4.60",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/uugvvdextewsglknwghw"
+        },
+        {
+            "id": 15,
+            "name": "Gatwick Airport",
+            "destination": 4,
+            "rate": "4.20",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/fp4zvvqw8sthlfuuz3ha"
+        },
+        {
+            "id": 8,
+            "name": "Hamad International Airport",
+            "destination": 6,
+            "rate": "4.70",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/r2fmznaqwt45vmqo5wpn"
+        },
+        {
+            "id": 4,
+            "name": "Heathrow Airport",
+            "destination": 4,
+            "rate": "4.40",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/vowbfywxsxcghqy9ugrj"
+        },
+        {
+            "id": 29,
+            "name": "Istanbul Airport",
+            "destination": 20,
+            "rate": "4.40",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/rtzvkg384pthcevjr8ui"
+        },
+        {
+            "id": 17,
+            "name": "John F. Kennedy International Airport",
+            "destination": 13,
+            "rate": "4.20",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/k6e0oomah9oysk0jndf4"
+        },
+        {
+            "id": 11,
+            "name": "King Abdulaziz International Airport",
+            "destination": 9,
+            "rate": "4.20",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/rcaryq63ihbbiiuopmu9"
+        },
+        {
+            "id": 28,
+            "name": "King Abdulaziz International Airport (Jeddah)",
+            "destination": 19,
+            "rate": "4.20",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/ahb230mxm9jd5v9zbviy"
+        },
+        {
+            "id": 10,
+            "name": "King Khalid International Airport",
+            "destination": 8,
+            "rate": "4.30",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/tyq5rydvqybrnaabgsam"
+        },
+        {
+            "id": 18,
+            "name": "LaGuardia Airport",
+            "destination": 13,
+            "rate": "3.90",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/ozkuixh1zo9c0tmojwt8"
+        },
+        {
+            "id": 5,
+            "name": "London City Airport",
+            "destination": 4,
+            "rate": "4.10",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/rmrzkvtkcd8orqr5eypy"
+        },
+        {
+            "id": 27,
+            "name": "Narita International Airport",
+            "destination": 18,
+            "rate": "4.30",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/voqhbhngylrm2pqkypxe"
+        },
+        {
+            "id": 19,
+            "name": "Newark Liberty International Airport",
+            "destination": 13,
+            "rate": "4.00",
+            "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/v6vhxvi3iijqug2cadnc"
+        }
+    ]
+}

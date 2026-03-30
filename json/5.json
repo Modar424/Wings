@@ -1,0 +1,1599 @@
+[
+    {
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "Bio": "Amsterdam is a charming city defined by its canals, artistic heritage, and relaxed lifestyle. Its museums, cycling culture, and historic houses reflect Dutch traditions of openness and creativity. Visitors enjoy cool weather, friendly locals, and unique treats like stroopwafels. The currency used is the Euro, and Dutch is the official language, though English is widely spoken.",
+        "slug": "amsterdam-netherlands",
+        "landmarks": "Rijksmuseum , Anne Frank House , Dam Square",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/s3k2uo7plem4klxqixqy",
+        "static_rate": "4.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 31,
+                "name": "Amsterdam Schiphol Airport",
+                "destination": 21,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/z0xxff5qlajiq1n5vuuv"
+            }
+        ],
+        "travel_cond_group_go": [],
+        "travel_cond_group_back": []
+    },
+    {
+        "country": "Germany",
+        "city": "Berlin",
+        "Bio": "Berlin is a vibrant city known for its history, artistic spirit, and modern lifestyle. Its landmarks reflect stories of empire, war, and reunification, making it a powerful cultural destination. Visitors enjoy cool weather, traditional German dishes, and a creative urban atmosphere. The currency used is the Euro, and German is the primary language spoken across the city.",
+        "slug": "berlin-germany",
+        "landmarks": "Brandenburg Gate , Berlin Wall , Museum Island",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/crtvmjtezuvsafazq1ua",
+        "static_rate": "4.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 16,
+                "name": "Berlin Brandenburg Airport",
+                "destination": 12,
+                "rate": "4.00",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/zybbtwgkfvtlokqp3mam"
+            }
+        ],
+        "travel_cond_group_go": [],
+        "travel_cond_group_back": []
+    },
+    {
+        "country": "Egypt",
+        "city": "Cairo",
+        "Bio": "Cairo, the bustling heart of Egypt, is a lively city shaped by thousands of years of civilization. The mighty Nile, ancient pyramids, and vibrant markets form a unique blend of history and modern life. Travelers enjoy warm weather, Egyptian dishes like koshari, and a lively cultural scene. The currency used is the Egyptian Pound, and Arabic is the official language of the capital.",
+        "slug": "cairo-egypt",
+        "landmarks": "Pyramids of Giza , Egyptian Museum , Khan el-Khalili",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/rjhhofa8l7lo1ltmt9sm",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 12,
+                "name": "Cairo International Airport",
+                "destination": 10,
+                "rate": "4.10",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/bvla9plgcph1hkmkkbx3"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To Egypt For non-Syrian",
+                "Description": "travel To Egypt For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel To Egypt For Syrian",
+                "Description": "travel To Egypt For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from Egypt For non-Syrian",
+                "Description": "travel back from Egypt For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from Egypt For Egypt People",
+                "Description": "travel back from Egypt For Egypt People",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "United Arab Emirates",
+        "city": "Dubai",
+        "Bio": "Damascus, often called the “City of Jasmine,” is among the oldest capitals on Earth, filled with narrow alleys, ancient houses, and spiritual landmarks. Its markets, mosques, and palaces reveal deep layers of Islamic and Middle Eastern history. Visitors can enjoy a pleasant climate, flavorful Levantine cuisine, and the welcoming nature of locals. The main language is Arabic, and the currency used is the Syrian Pound.",
+        "slug": "dubai-united-arab-emirates",
+        "landmarks": "Umayyad Mosque,",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/pmtyztwlhirtxmjvsga3",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 6,
+                "name": "Dubai International Airport",
+                "destination": 5,
+                "rate": "4.60",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/uugvvdextewsglknwghw"
+            },
+            {
+                "id": 7,
+                "name": "Al Maktoum International Airport",
+                "destination": 5,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/piy5ynxslhyjvqdidjk6"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To UAE for Syrian",
+                "Description": "travel To UAE for Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel To UAE for non-Syrian",
+                "Description": "travel To UAE for non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from UAE for Syrian",
+                "Description": "travel back from UAE for Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from UAE for UAE`s people",
+                "Description": "travel back from UAE for UAE`s people",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from UAE for non-Syrian",
+                "Description": "travel back from UAE for non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "Turkey",
+        "city": "Istanbul",
+        "Bio": "Istanbul, a city connecting Europe and Asia, carries the legacy of empires through its mosques, palaces, and bustling bazaars. Its culture blends Ottoman traditions with modern Turkish life. Visitors enjoy varied weather, rich cuisine like kebabs and sweets, and warm hospitality. The currency used is the Turkish Lira, and Turkish is the main language spoken.",
+        "slug": "istanbul-turkey",
+        "landmarks": "Hagia Sophia , Blue Mosque , Topkapi Palace",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/z9r0l1jynk7odxhjd0sj",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 29,
+                "name": "Istanbul Airport",
+                "destination": 20,
+                "rate": "4.40",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/rtzvkg384pthcevjr8ui"
+            },
+            {
+                "id": 30,
+                "name": "Sabiha Gökçen Airport",
+                "destination": 20,
+                "rate": "4.10",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/ofptg0blqbas3193w6ze"
+            }
+        ],
+        "travel_cond_group_go": [],
+        "travel_cond_group_back": []
+    },
+    {
+        "country": "United Kingdom",
+        "city": "London",
+        "Bio": "A global cultural hub with royal landmarks, diverse food, cool weather, the Pound Sterling, and English as the main language.",
+        "slug": "london-united-kingdom",
+        "landmarks": "The British Museum , Tower of London , Big Ben",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/lwvlwuchnudfbjdrjng6",
+        "static_rate": "4.60",
+        "avg_rate": "4.85",
+        "airports": [
+            {
+                "id": 5,
+                "name": "London City Airport",
+                "destination": 4,
+                "rate": "4.10",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/rmrzkvtkcd8orqr5eypy"
+            },
+            {
+                "id": 4,
+                "name": "Heathrow Airport",
+                "destination": 4,
+                "rate": "4.40",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/vowbfywxsxcghqy9ugrj"
+            },
+            {
+                "id": 15,
+                "name": "Gatwick Airport",
+                "destination": 4,
+                "rate": "4.20",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/fp4zvvqw8sthlfuuz3ha"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To UK For non-Syrian",
+                "Description": "travel To UK For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    },
+                    {
+                        "id": 3,
+                        "name": "COVID-19 vaccine",
+                        "Description": "COVID-19 vaccine certificate approved",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/sodniltqgf9z6yxpppx9"
+                    }
+                ]
+            },
+            {
+                "name": "travel To UK For Syrian",
+                "Description": "travel To UK For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    },
+                    {
+                        "id": 3,
+                        "name": "COVID-19 vaccine",
+                        "Description": "COVID-19 vaccine certificate approved",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/sodniltqgf9z6yxpppx9"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Financial guarantee",
+                        "Description": "A financial guarantee that you deposit into a bank account before traveling and withdraw gradually",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/iz6z6xy7jxaf5j8xnkxm"
+                    }
+                ]
+            },
+            {
+                "name": "travel To UK For UK`s people",
+                "Description": "travel To UK For UK`s people",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from UK For non-Syrian",
+                "Description": "travel back from UK For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    },
+                    {
+                        "id": 3,
+                        "name": "COVID-19 vaccine",
+                        "Description": "COVID-19 vaccine certificate approved",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/sodniltqgf9z6yxpppx9"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from UK For Syrian",
+                "Description": "travel back from UK For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from UK For UK`s People",
+                "Description": "travel back from UK For UK`s People",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "Saudi Arabia",
+        "city": "Mecca",
+        "Bio": "Mecca, the spiritual heart of Islam, welcomes millions of pilgrims yearly, making it one of the most culturally significant cities on Earth. Its sacred landmarks, traditions, and community life reflect centuries of devotion and hospitality. The city has a hot desert climate, and visitors experience Hijazi culture and cuisine. The currency used is the Saudi Riyal, and Arabic is the main language.",
+        "slug": "mecca-saudi-arabia",
+        "landmarks": "Masjid al-Haram , Kaaba , Abraj Al-Bait",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/hpbzkcciaqtmvt4sgjhs",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 28,
+                "name": "King Abdulaziz International Airport (Jeddah)",
+                "destination": 19,
+                "rate": "4.20",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/ahb230mxm9jd5v9zbviy"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To SA For Syrian",
+                "Description": "travel To SA For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel To SA For non-Syrian",
+                "Description": "travel To SA For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from SA For non-Syrian",
+                "Description": "travel back from SA For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from SA For Saudien",
+                "Description": "travel back from SA For Saudien",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "United States",
+        "city": "New York",
+        "Bio": "New York City, the “City That Never Sleeps,” is a global center of culture, business, and diversity. Its skyline, museums, and neighborhoods reflect stories from every corner of the world. Travelers experience four distinct seasons, dynamic energy, and endless dining options. The local currency is the US Dollar, and English is the main language used throughout the city.",
+        "slug": "new-york-united-states",
+        "landmarks": "Statue of Liberty , Times Square , Central Park",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/fmmnagqinpibsfsrzavs",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 17,
+                "name": "John F. Kennedy International Airport",
+                "destination": 13,
+                "rate": "4.20",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/k6e0oomah9oysk0jndf4"
+            },
+            {
+                "id": 18,
+                "name": "LaGuardia Airport",
+                "destination": 13,
+                "rate": "3.90",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/ozkuixh1zo9c0tmojwt8"
+            },
+            {
+                "id": 19,
+                "name": "Newark Liberty International Airport",
+                "destination": 13,
+                "rate": "4.00",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/v6vhxvi3iijqug2cadnc"
+            }
+        ],
+        "travel_cond_group_go": [],
+        "travel_cond_group_back": []
+    },
+    {
+        "country": "France",
+        "city": "Paris",
+        "Bio": "A romantic capital known for art, fashion, cafés, and historic architecture. Uses the Euro, has mild weather, speaks French, and offers cuisine like croissants and escargot.",
+        "slug": "paris-france",
+        "landmarks": "Eiffel Tower , Louvre Museum , Arc de Triomphe",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/oqgw0czkzw0clpeailzr",
+        "static_rate": "5.00",
+        "avg_rate": "4.94",
+        "airports": [
+            {
+                "id": 3,
+                "name": "Paris Charles de Gaulle Airport",
+                "destination": 3,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/n13o5bwnnpwzhl66alo9"
+            },
+            {
+                "id": 14,
+                "name": "Orly Airport",
+                "destination": 3,
+                "rate": "4.10",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/puwkdei01yjhx53wdc34"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To France For Syrian",
+                "Description": "travel To France For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    },
+                    {
+                        "id": 3,
+                        "name": "COVID-19 vaccine",
+                        "Description": "COVID-19 vaccine certificate approved",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/sodniltqgf9z6yxpppx9"
+                    }
+                ]
+            },
+            {
+                "name": "travel To France For Francien",
+                "Description": "travel To France For Francien",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel To France For non-Syrian",
+                "Description": "travel To France For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    },
+                    {
+                        "id": 3,
+                        "name": "COVID-19 vaccine",
+                        "Description": "COVID-19 vaccine certificate approved",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/sodniltqgf9z6yxpppx9"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from France For non-Syrian",
+                "Description": "travel back from France For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from France For Syrian",
+                "Description": "travel back from France For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from France For Francien",
+                "Description": "travel back from France For Francien",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "Saudi Arabia",
+        "city": "Riyadh",
+        "Bio": "Riyadh, the Saudi capital, showcases the kingdom’s transformation from desert roots into a thriving modern metropolis. Its museums, fortresses, and vibrant districts reflect deep cultural heritage and rapid development. Visitors enjoy traditional Najdi cuisine, a hot desert climate, and warm local hospitality. The city uses the Saudi Riyal as its currency, and Arabic is the official language spoken everywhere.",
+        "slug": "riyadh-saudi-arabia",
+        "landmarks": "Kingdom Centre , National Museum , Al Masmak Fortress",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/p5yjjwz27ttvjppuxooz",
+        "static_rate": "4.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 10,
+                "name": "King Khalid International Airport",
+                "destination": 8,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/tyq5rydvqybrnaabgsam"
+            },
+            {
+                "id": 23,
+                "name": "Santos Dumont Airport",
+                "destination": 8,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/ohk3jbhcbwocehbmbssj"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To SA For Syrian",
+                "Description": "travel To SA For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel To SA For non-Syrian",
+                "Description": "travel To SA For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from SA For non-Syrian",
+                "Description": "travel back from SA For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from SA For Saudien",
+                "Description": "travel back from SA For Saudien",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "Japan",
+        "city": "Tokyo",
+        "Bio": "Tokyo is a dynamic megacity where futuristic technology meets ancient traditions. Its temples, neon streets, and cultural etiquette reflect Japan’s deep heritage. Visitors enjoy seasonal beauty, from cherry blossoms to snowy winters, along with world-famous cuisine like sushi and ramen. The currency used is the Japanese Yen, and Japanese is the primary language.",
+        "slug": "tokyo-japan",
+        "landmarks": "Tokyo Tower , Senso-ji Temple , Shibuya Crossing",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/ogfw2eb4kmnlgyhvdtkv",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 26,
+                "name": "Tokyo Haneda Airport",
+                "destination": 18,
+                "rate": "4.60",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/lddjnzzpf2tud7uu6hfs"
+            },
+            {
+                "id": 27,
+                "name": "Narita International Airport",
+                "destination": 18,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/voqhbhngylrm2pqkypxe"
+            }
+        ],
+        "travel_cond_group_go": [],
+        "travel_cond_group_back": []
+    }
+][
+    {
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "Bio": "Amsterdam is a charming city defined by its canals, artistic heritage, and relaxed lifestyle. Its museums, cycling culture, and historic houses reflect Dutch traditions of openness and creativity. Visitors enjoy cool weather, friendly locals, and unique treats like stroopwafels. The currency used is the Euro, and Dutch is the official language, though English is widely spoken.",
+        "slug": "amsterdam-netherlands",
+        "landmarks": "Rijksmuseum , Anne Frank House , Dam Square",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/s3k2uo7plem4klxqixqy",
+        "static_rate": "4.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 31,
+                "name": "Amsterdam Schiphol Airport",
+                "destination": 21,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/z0xxff5qlajiq1n5vuuv"
+            }
+        ],
+        "travel_cond_group_go": [],
+        "travel_cond_group_back": []
+    },
+    {
+        "country": "Germany",
+        "city": "Berlin",
+        "Bio": "Berlin is a vibrant city known for its history, artistic spirit, and modern lifestyle. Its landmarks reflect stories of empire, war, and reunification, making it a powerful cultural destination. Visitors enjoy cool weather, traditional German dishes, and a creative urban atmosphere. The currency used is the Euro, and German is the primary language spoken across the city.",
+        "slug": "berlin-germany",
+        "landmarks": "Brandenburg Gate , Berlin Wall , Museum Island",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/crtvmjtezuvsafazq1ua",
+        "static_rate": "4.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 16,
+                "name": "Berlin Brandenburg Airport",
+                "destination": 12,
+                "rate": "4.00",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/zybbtwgkfvtlokqp3mam"
+            }
+        ],
+        "travel_cond_group_go": [],
+        "travel_cond_group_back": []
+    },
+    {
+        "country": "Egypt",
+        "city": "Cairo",
+        "Bio": "Cairo, the bustling heart of Egypt, is a lively city shaped by thousands of years of civilization. The mighty Nile, ancient pyramids, and vibrant markets form a unique blend of history and modern life. Travelers enjoy warm weather, Egyptian dishes like koshari, and a lively cultural scene. The currency used is the Egyptian Pound, and Arabic is the official language of the capital.",
+        "slug": "cairo-egypt",
+        "landmarks": "Pyramids of Giza , Egyptian Museum , Khan el-Khalili",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/rjhhofa8l7lo1ltmt9sm",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 12,
+                "name": "Cairo International Airport",
+                "destination": 10,
+                "rate": "4.10",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/bvla9plgcph1hkmkkbx3"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To Egypt For non-Syrian",
+                "Description": "travel To Egypt For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel To Egypt For Syrian",
+                "Description": "travel To Egypt For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from Egypt For non-Syrian",
+                "Description": "travel back from Egypt For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from Egypt For Egypt People",
+                "Description": "travel back from Egypt For Egypt People",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "United Arab Emirates",
+        "city": "Dubai",
+        "Bio": "Damascus, often called the “City of Jasmine,” is among the oldest capitals on Earth, filled with narrow alleys, ancient houses, and spiritual landmarks. Its markets, mosques, and palaces reveal deep layers of Islamic and Middle Eastern history. Visitors can enjoy a pleasant climate, flavorful Levantine cuisine, and the welcoming nature of locals. The main language is Arabic, and the currency used is the Syrian Pound.",
+        "slug": "dubai-united-arab-emirates",
+        "landmarks": "Umayyad Mosque,",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/pmtyztwlhirtxmjvsga3",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 6,
+                "name": "Dubai International Airport",
+                "destination": 5,
+                "rate": "4.60",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/uugvvdextewsglknwghw"
+            },
+            {
+                "id": 7,
+                "name": "Al Maktoum International Airport",
+                "destination": 5,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/piy5ynxslhyjvqdidjk6"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To UAE for Syrian",
+                "Description": "travel To UAE for Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel To UAE for non-Syrian",
+                "Description": "travel To UAE for non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from UAE for Syrian",
+                "Description": "travel back from UAE for Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from UAE for UAE`s people",
+                "Description": "travel back from UAE for UAE`s people",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from UAE for non-Syrian",
+                "Description": "travel back from UAE for non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "Turkey",
+        "city": "Istanbul",
+        "Bio": "Istanbul, a city connecting Europe and Asia, carries the legacy of empires through its mosques, palaces, and bustling bazaars. Its culture blends Ottoman traditions with modern Turkish life. Visitors enjoy varied weather, rich cuisine like kebabs and sweets, and warm hospitality. The currency used is the Turkish Lira, and Turkish is the main language spoken.",
+        "slug": "istanbul-turkey",
+        "landmarks": "Hagia Sophia , Blue Mosque , Topkapi Palace",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/z9r0l1jynk7odxhjd0sj",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 29,
+                "name": "Istanbul Airport",
+                "destination": 20,
+                "rate": "4.40",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/rtzvkg384pthcevjr8ui"
+            },
+            {
+                "id": 30,
+                "name": "Sabiha Gökçen Airport",
+                "destination": 20,
+                "rate": "4.10",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/ofptg0blqbas3193w6ze"
+            }
+        ],
+        "travel_cond_group_go": [],
+        "travel_cond_group_back": []
+    },
+    {
+        "country": "United Kingdom",
+        "city": "London",
+        "Bio": "A global cultural hub with royal landmarks, diverse food, cool weather, the Pound Sterling, and English as the main language.",
+        "slug": "london-united-kingdom",
+        "landmarks": "The British Museum , Tower of London , Big Ben",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/lwvlwuchnudfbjdrjng6",
+        "static_rate": "4.60",
+        "avg_rate": "4.85",
+        "airports": [
+            {
+                "id": 5,
+                "name": "London City Airport",
+                "destination": 4,
+                "rate": "4.10",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/rmrzkvtkcd8orqr5eypy"
+            },
+            {
+                "id": 4,
+                "name": "Heathrow Airport",
+                "destination": 4,
+                "rate": "4.40",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/vowbfywxsxcghqy9ugrj"
+            },
+            {
+                "id": 15,
+                "name": "Gatwick Airport",
+                "destination": 4,
+                "rate": "4.20",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/fp4zvvqw8sthlfuuz3ha"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To UK For non-Syrian",
+                "Description": "travel To UK For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    },
+                    {
+                        "id": 3,
+                        "name": "COVID-19 vaccine",
+                        "Description": "COVID-19 vaccine certificate approved",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/sodniltqgf9z6yxpppx9"
+                    }
+                ]
+            },
+            {
+                "name": "travel To UK For Syrian",
+                "Description": "travel To UK For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    },
+                    {
+                        "id": 3,
+                        "name": "COVID-19 vaccine",
+                        "Description": "COVID-19 vaccine certificate approved",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/sodniltqgf9z6yxpppx9"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Financial guarantee",
+                        "Description": "A financial guarantee that you deposit into a bank account before traveling and withdraw gradually",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/iz6z6xy7jxaf5j8xnkxm"
+                    }
+                ]
+            },
+            {
+                "name": "travel To UK For UK`s people",
+                "Description": "travel To UK For UK`s people",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from UK For non-Syrian",
+                "Description": "travel back from UK For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    },
+                    {
+                        "id": 3,
+                        "name": "COVID-19 vaccine",
+                        "Description": "COVID-19 vaccine certificate approved",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/sodniltqgf9z6yxpppx9"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from UK For Syrian",
+                "Description": "travel back from UK For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from UK For UK`s People",
+                "Description": "travel back from UK For UK`s People",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "Saudi Arabia",
+        "city": "Mecca",
+        "Bio": "Mecca, the spiritual heart of Islam, welcomes millions of pilgrims yearly, making it one of the most culturally significant cities on Earth. Its sacred landmarks, traditions, and community life reflect centuries of devotion and hospitality. The city has a hot desert climate, and visitors experience Hijazi culture and cuisine. The currency used is the Saudi Riyal, and Arabic is the main language.",
+        "slug": "mecca-saudi-arabia",
+        "landmarks": "Masjid al-Haram , Kaaba , Abraj Al-Bait",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/hpbzkcciaqtmvt4sgjhs",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 28,
+                "name": "King Abdulaziz International Airport (Jeddah)",
+                "destination": 19,
+                "rate": "4.20",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/ahb230mxm9jd5v9zbviy"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To SA For Syrian",
+                "Description": "travel To SA For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel To SA For non-Syrian",
+                "Description": "travel To SA For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from SA For non-Syrian",
+                "Description": "travel back from SA For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from SA For Saudien",
+                "Description": "travel back from SA For Saudien",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "United States",
+        "city": "New York",
+        "Bio": "New York City, the “City That Never Sleeps,” is a global center of culture, business, and diversity. Its skyline, museums, and neighborhoods reflect stories from every corner of the world. Travelers experience four distinct seasons, dynamic energy, and endless dining options. The local currency is the US Dollar, and English is the main language used throughout the city.",
+        "slug": "new-york-united-states",
+        "landmarks": "Statue of Liberty , Times Square , Central Park",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/fmmnagqinpibsfsrzavs",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 17,
+                "name": "John F. Kennedy International Airport",
+                "destination": 13,
+                "rate": "4.20",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/k6e0oomah9oysk0jndf4"
+            },
+            {
+                "id": 18,
+                "name": "LaGuardia Airport",
+                "destination": 13,
+                "rate": "3.90",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/ozkuixh1zo9c0tmojwt8"
+            },
+            {
+                "id": 19,
+                "name": "Newark Liberty International Airport",
+                "destination": 13,
+                "rate": "4.00",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/v6vhxvi3iijqug2cadnc"
+            }
+        ],
+        "travel_cond_group_go": [],
+        "travel_cond_group_back": []
+    },
+    {
+        "country": "France",
+        "city": "Paris",
+        "Bio": "A romantic capital known for art, fashion, cafés, and historic architecture. Uses the Euro, has mild weather, speaks French, and offers cuisine like croissants and escargot.",
+        "slug": "paris-france",
+        "landmarks": "Eiffel Tower , Louvre Museum , Arc de Triomphe",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/oqgw0czkzw0clpeailzr",
+        "static_rate": "5.00",
+        "avg_rate": "4.94",
+        "airports": [
+            {
+                "id": 3,
+                "name": "Paris Charles de Gaulle Airport",
+                "destination": 3,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/n13o5bwnnpwzhl66alo9"
+            },
+            {
+                "id": 14,
+                "name": "Orly Airport",
+                "destination": 3,
+                "rate": "4.10",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/puwkdei01yjhx53wdc34"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To France For Syrian",
+                "Description": "travel To France For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    },
+                    {
+                        "id": 3,
+                        "name": "COVID-19 vaccine",
+                        "Description": "COVID-19 vaccine certificate approved",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/sodniltqgf9z6yxpppx9"
+                    }
+                ]
+            },
+            {
+                "name": "travel To France For Francien",
+                "Description": "travel To France For Francien",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel To France For non-Syrian",
+                "Description": "travel To France For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    },
+                    {
+                        "id": 3,
+                        "name": "COVID-19 vaccine",
+                        "Description": "COVID-19 vaccine certificate approved",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/sodniltqgf9z6yxpppx9"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from France For non-Syrian",
+                "Description": "travel back from France For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from France For Syrian",
+                "Description": "travel back from France For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from France For Francien",
+                "Description": "travel back from France For Francien",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "Saudi Arabia",
+        "city": "Riyadh",
+        "Bio": "Riyadh, the Saudi capital, showcases the kingdom’s transformation from desert roots into a thriving modern metropolis. Its museums, fortresses, and vibrant districts reflect deep cultural heritage and rapid development. Visitors enjoy traditional Najdi cuisine, a hot desert climate, and warm local hospitality. The city uses the Saudi Riyal as its currency, and Arabic is the official language spoken everywhere.",
+        "slug": "riyadh-saudi-arabia",
+        "landmarks": "Kingdom Centre , National Museum , Al Masmak Fortress",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/p5yjjwz27ttvjppuxooz",
+        "static_rate": "4.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 10,
+                "name": "King Khalid International Airport",
+                "destination": 8,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/tyq5rydvqybrnaabgsam"
+            },
+            {
+                "id": 23,
+                "name": "Santos Dumont Airport",
+                "destination": 8,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/ohk3jbhcbwocehbmbssj"
+            }
+        ],
+        "travel_cond_group_go": [
+            {
+                "name": "travel To SA For Syrian",
+                "Description": "travel To SA For Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel To SA For non-Syrian",
+                "Description": "travel To SA For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            }
+        ],
+        "travel_cond_group_back": [
+            {
+                "name": "travel back from SA For non-Syrian",
+                "Description": "travel back from SA For non-Syrian",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Entry visa",
+                        "Description": "You can obtain an entry visa from the Syrian embassy in your country.(just in case your passport isn`t enough)",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/uasyfvgzjlsonjpfjveo"
+                    }
+                ]
+            },
+            {
+                "name": "travel back from SA For Saudien",
+                "Description": "travel back from SA For Saudien",
+                "conditions": [
+                    {
+                        "id": 1,
+                        "name": "PassPort",
+                        "Description": "your Passport",
+                        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/travel_condition/qg9tem786zrjeb3eqz10"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "Japan",
+        "city": "Tokyo",
+        "Bio": "Tokyo is a dynamic megacity where futuristic technology meets ancient traditions. Its temples, neon streets, and cultural etiquette reflect Japan’s deep heritage. Visitors enjoy seasonal beauty, from cherry blossoms to snowy winters, along with world-famous cuisine like sushi and ramen. The currency used is the Japanese Yen, and Japanese is the primary language.",
+        "slug": "tokyo-japan",
+        "landmarks": "Tokyo Tower , Senso-ji Temple , Shibuya Crossing",
+        "image": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/destination/ogfw2eb4kmnlgyhvdtkv",
+        "static_rate": "5.00",
+        "avg_rate": "0.00",
+        "airports": [
+            {
+                "id": 26,
+                "name": "Tokyo Haneda Airport",
+                "destination": 18,
+                "rate": "4.60",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/lddjnzzpf2tud7uu6hfs"
+            },
+            {
+                "id": 27,
+                "name": "Narita International Airport",
+                "destination": 18,
+                "rate": "4.30",
+                "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/WingsAirline/media/Flight/airports/voqhbhngylrm2pqkypxe"
+            }
+        ],
+        "travel_cond_group_go": [],
+        "travel_cond_group_back": []
+    }
+]

@@ -1,0 +1,14 @@
+{
+    "detail": "Booking created successfully.",
+    "booking_id": 6,
+    "price": 180,
+    "data": {
+        "flight_type": "one_direction",
+        "flight_go": 7,
+        "flight_back": null,
+        "chears": 2,
+        "chears_checked_in_go": 2,
+        "chears_checked_in_back": null,
+        "chear_type": "Premium"
+    }
+}

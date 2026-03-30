@@ -1,0 +1,22 @@
+[
+    {
+        "id": 2,
+        "career_name": "security employee",
+        "description": "security employee Description",
+        "positions": 1,
+        "L_salary": "300.00",
+        "U_salary": "500.00",
+        "experience": "+4 years",
+        "published_at": "2026-03-28T10:52:10Z"
+    },
+    {
+        "id": 1,
+        "career_name": "HR employe",
+        "description": "HR employe",
+        "positions": 2,
+        "L_salary": "2000.00",
+        "U_salary": "2900.00",
+        "experience": "5 years",
+        "published_at": "2025-12-04T05:08:58Z"
+    }
+]

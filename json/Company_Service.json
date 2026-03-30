@@ -1,0 +1,603 @@
+{
+  "service_api_documentation": {
+    "base_url": "/api/service/",
+    "authentication": {
+        "type": "JWT Authentication",
+        "required": true,
+        "header": "Authorization: Bearer <access_token>",
+        "description": "All protected endpoints require a valid JWT access token. The token must be included in the Authorization header using the 'Bearer' prefix, or via cookies."
+    },
+
+    "booking_endpoints": [
+
+      {
+        "name": "Get User Bookings",
+        "endpoint": "booking/",
+        "method": "GET",
+        "description": "Returns a list of all bookings created by the authenticated user.",
+        "authentication_required": true,
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": [
+            {
+              "id": "integer",
+              "flight_type": "one_direction | two_direction",
+              "booking_date": "datetime",
+              "status": "PENDING | CONFIRMED | CANCELLED | REFUNDED | COMPLETED | REJECTED | EXPIRED | CHECKED_IN | WAITING_BACK_FLIGHT",
+              "chears": "integer",
+              "chears_checked_in_go": "integer",
+              "chears_checked_in_back": "integer | 0",
+              "chear_type": "Economy | Premium | Business | First",
+              "price": "decimal",
+              "is_payed": "boolean",
+              "updated_at": "datetime",
+              "user": "integer",
+              "flight_go": "integer",
+              "flight_back": "integer | null"
+            }
+          ]
+        }
+      },
+
+      {
+        "name": "Get Booking Details",
+        "endpoint": "booking/{booking_id}/",
+        "method": "GET",
+        "description": "Returns full details of a specific booking belonging to the authenticated user.",
+        "authentication_required": true,
+        "path_parameters": {
+          "booking_id": "integer"
+        },
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": {
+            "id": "integer",
+            "flight_type": "one_direction | two_direction",
+            "booking_date": "datetime",
+            "status": "PENDING | CONFIRMED | CANCELLED | REFUNDED | COMPLETED | REJECTED | EXPIRED | CHECKED_IN | WAITING_BACK_FLIGHT",
+            "chears": "integer",
+            "chears_checked_in_go": "integer",
+            "chears_checked_in_back": "integer | 0",
+            "chear_type": "Economy | Premium | Business | First",
+            "price": "decimal",
+            "is_payed": "boolean",
+            "updated_at": "datetime",
+            "user": "integer",
+            "flight_go": "integer",
+            "flight_back": "integer | null"
+          }
+        },
+        "error_responses": [
+          {
+            "status": 404,
+            "detail": "No BookingFlight matches the given query."
+          }
+        ]
+      },
+
+      {
+        "name": "Create Booking",
+        "endpoint": "booking/create/",
+        "method": "POST",
+        "description": "Creates a new flight booking for the authenticated user.",
+        "authentication_required": true,
+        "request_body": {
+          "flight_type": "one_direction | two_direction",
+          "flight_go": "integer (flight id)",
+          "flight_back": "integer | null",
+          "chears": "integer",
+          "chears_checked_in_go": "integer",
+          "chears_checked_in_back": "integer | 0",
+          "chear_type": "Economy | Premium | Business | First"
+        },
+        "business_rules": [
+          "Seat availability is checked before booking.",
+          "If seats are insufficient, booking is rejected.",
+          "Price is automatically calculated by backend.",
+          "Frontend must NOT send price."
+        ],
+        "success_response": {
+          "status": 201,
+          "data": {
+            "detail": "Booking created successfully.",
+            "booking_id": "integer",
+            "price": "decimal",
+            "data": {}
+          }
+        },
+        "error_responses": [
+          {
+            "status": 400,
+            "detail": "Number of intired chears isn't correct."
+          },
+          {
+            "status": 400,
+            "detail": "Not enough available seats in outbound flight. Available: (number of available seats=integer)."
+          },
+          {
+            "status": 400,
+            "detail": "Not enough available seats in return flight. Available: (number of available seats=integer)."
+          },
+          {
+            "status": 400,
+            "flight_back": [
+              "Return flight is required for two-direction booking."
+            ]
+          },
+          {
+            "status": 400,
+            "flight_back": [
+              "One-way booking cannot include a return flight."
+            ]
+          }
+        ]
+      },
+
+      {
+        "name": "Edit Booking",
+        "endpoint": "booking/{booking_id}/edit/",
+        "method": "PUT",
+        "description": "Modify an existing booking to change the flight date (same destination only).",
+        "authentication_required": true,
+        "path_parameters": {
+          "booking_id": "integer"
+        },
+        "request_body": {
+          "flight_go": "integer (new flight id)",
+          "flight_back": "integer | null"
+        },
+        "business_rules": [
+          "Booking cannot be modified within 24 hours before departure.",
+          "Destination cannot be changed.",
+          "Seat availability is verified in the new flight.",
+          "Seats are restored to the old flight and deducted from the new flight.",
+          "Price is recalculated automatically."
+        ],
+        "success_response": {
+          "status": 200,
+          "data": {
+            "detail": "Booking updated successfully.",
+            "new_price": "decimal",
+            "booking_id": "integer"
+          }
+        },
+        "error_responses": [
+          {
+            "status": 400,
+            "detail": "Editing blocked 24h before outbound flight."
+          },
+          {
+            "status": 400,
+            "detail": "Editing blocked 24h before return flight."
+          },
+          {
+            "status": 400,
+            "detail": "Cannot change destination. Only date/time allowed."
+          },
+          {
+            "status": 400,
+            "detail": "Return flight destination mismatch."
+          },
+          {
+            "status": 400,
+            "detail": "Insufficient seats on the new outbound flight."
+          },
+          {
+            "status": 400,
+            "detail": "Insufficient seats on the new return flight."
+          },
+          {
+            "status": 400,
+            "detail": "This flight is finished."
+          },
+          {
+            "status": 400,
+            "detail": "This flight is departed."
+          }
+        ]
+      },
+
+      {
+        "name": "Cancel Booking",
+        "endpoint": "booking/{booking_id}/cancel/",
+        "method": "POST",
+        "description": "Cancels a booking and restores the reserved seats back to the flight.",
+        "authentication_required": true,
+        "path_parameters": {
+          "booking_id": "integer"
+        },
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": {
+            "detail": "Booking cancelled and seats restored."
+          }
+        },
+        "error_responses": [
+          {
+            "status": 404,
+            "detail": "Booking not found."
+          }
+        ]
+      },
+
+      {
+        "name": "Refund Booking",
+        "endpoint": "booking/{booking_id}/refund/",
+        "method": "POST",
+        "description": "Refunds a cancelled booking and marks payment as refunded.",
+        "authentication_required": true,
+        "business_rules": [
+          "Refund is allowed only after booking status becomes CANCELLED."
+        ],
+        "path_parameters": {
+          "booking_id": "integer"
+        },
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": {
+            "detail": "Refund issued successfully."
+          }
+        },
+        "error_responses": [
+          {
+            "status": 400,
+            "detail": "Refund allowed only after cancellation."
+          },
+          {
+            "status": 404,
+            "detail": "Booking not found."
+          }
+        ]
+      }
+    ],
+
+    "special_assistance_endpoints": [
+
+      {
+        "name": "List Special Assistance Services",
+        "endpoint": "assistance/",
+        "method": "GET",
+        "description": "Returns all available special assistance services.",
+        "authentication_required": false,
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": [
+            {
+              "id": "integer",
+              "price": "decimal",
+              "assistance": "string",
+              "created_at": "datetime",
+              "updated_at": "datetime"
+            }
+          ]
+        }
+      },
+
+      {
+        "name": "Get Assistance Details",
+        "endpoint": "assistance/{assistance_id}/",
+        "method": "GET",
+        "description": "Returns details of a specific assistance service.",
+        "authentication_required": false,
+        "path_parameters": {
+          "assistance_id": "integer"
+        },
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": [
+            {
+              "id": "integer",
+              "price": "decimal",
+              "assistance": "string",
+              "created_at": "datetime",
+              "updated_at": "datetime"
+            }
+          ]
+        }
+      },
+
+      {
+        "name": "User Assistance Orders",
+        "endpoint": "assistance/orders/",
+        "method": "GET",
+        "description": "Returns all assistance orders created by the authenticated user.",
+        "authentication_required": true,
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": [
+            {
+              "id": "integer",
+              "note": "string",
+              "created_at": "datetime",
+              "state": "pinned | ready | done | rejected | canceled | refunded",
+              "is_payed": "boolean",
+              "user": "integer",
+              "special_assistance": "integer",
+              "booking_flight": "integer"
+            }
+          ]
+        }
+      },
+
+      {
+        "name": "Assistance Order Details",
+        "endpoint": "assistance/order/{order_id}/",
+        "method": "GET",
+        "description": "Returns details of a specific assistance order.",
+        "authentication_required": true,
+        "path_parameters": {
+          "order_id": "integer"
+        },
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": [
+            {
+              "id": "integer",
+              "note": "string",
+              "created_at": "datetime",
+              "state": "pinned | ready | done | rejected | canceled | refunded",
+              "is_payed": "boolean",
+              "user": "integer",
+              "special_assistance": "integer",
+              "booking_flight": "integer"
+            }
+          ]
+        },
+        "error_responses": [
+          {
+            "status": 404,
+            "detail": "No AssistanceOrder matches the given query."
+          }
+        ]
+      },
+
+      {
+        "name": "Create Assistance Order",
+        "endpoint": "assistance/order/create/",
+        "method": "POST",
+        "authentication_required": true,
+        "description": "Creates a special assistance request.",
+        "request_body": {
+          "special_assistance": "integer (assistance service id)",
+          "booking_flight": "integer (booking id)",
+          "state": "pinned | ready | done | rejected | canceled | refunded",
+          "note": "string"
+        },
+        "success_response": {
+          "status": 200,
+          "data": {
+            "detail": "Special assistance ordered successfully."
+          }
+        }
+      },
+
+      {
+        "name": "Cancel Assistance Order",
+        "endpoint": "assistance/order/{order_id}/cancel/",
+        "method": "POST",
+        "authentication_required": true,
+        "description": "Cancels a special assistance order.",
+        "success_response": {
+          "status": 200,
+          "data": {
+            "detail": "Special assistance order cancelled."
+          }
+        }
+      }
+    ]
+  },
+  "company_api_documentation": {
+    "base_url": "/api/company/",
+    "authentication": {
+      "required": false,
+      "type": "Public API"
+    },
+
+    "social_media_endpoints": [
+      {
+        "name": "Get Social Media Accounts",
+        "endpoint": "social/",
+        "method": "GET",
+        "description": "Returns all official company social media accounts.",
+        "authentication_required": false,
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": [
+            {
+              "id": "integer",
+              "name": "string",
+              "link": "string"
+            }
+          ]
+        }
+      }
+    ],
+
+    "careers_endpoints": [
+      {
+        "name": "List Careers",
+        "endpoint": "careers/",
+        "method": "GET",
+        "description": "Returns all available career opportunities within the company.",
+        "authentication_required": false,
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": [
+            {
+              "id": "integer",
+              "career_name": "string",
+              "description": "string",
+              "positions": "integer",
+              "L_salary": "decimal",
+              "U_salary": "decimal",
+              "experience": "string",
+              "published_at": "datetime"
+            }
+          ]
+        }
+      },
+
+      {
+        "name": "Career Details",
+        "endpoint": "careers/{career_id}/",
+        "method": "GET",
+        "description": "Returns full details about a specific job position.",
+        "authentication_required": false,
+        "path_parameters": {
+          "career_id": "integer"
+        },
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": {
+            "id": "integer",
+            "career_name": "string",
+            "description": "string",
+            "positions": "integer",
+            "L_salary": "decimal",
+            "U_salary": "decimal",
+            "experience": "string",
+            "published_at": "datetime"
+          }
+        },
+        "error_responses": [
+          {
+            "status": 404,
+            "detail": "Career not found"
+          }
+        ]
+      },
+
+      {
+        "name": "Submit Career Application",
+        "endpoint": "careers/{career_id}/submit/",
+        "method": "POST",
+        "description": "Submit a job application for a specific career position.",
+        "authentication_required": false,
+        "path_parameters": {
+          "career_id": "integer"
+        },
+        "request_body": {
+          "full_name": "string",
+          "email": "string",
+          "phone": "string",
+          "cv": "file url | null",
+          "message": "string (optional)"
+        },
+        "business_rules": [
+          "The career must exist.",
+          "Application will be linked automatically to the career.",
+          "Application ID is generated after submission."
+        ],
+        "success_response": {
+          "status": 201,
+          "data": {
+            "detail": "Application submitted successfully",
+            "application_id": "integer",
+            "submitted_data": {
+              "full_name": "string",
+              "email": "string",
+              "phone": "string",
+              "cv": "file url | null",
+              "message": "string"
+            }
+          }
+        },
+        "error_responses": [
+          {
+            "status": 404,
+            "detail": "Career not found"
+          },
+          {
+            "status": 400,
+            "message": [
+              "This field is required."
+            ]
+          }
+        ]
+      }
+    ],
+
+    "articles_endpoints": [
+      {
+        "name": "List Articles",
+        "endpoint": "articles/",
+        "method": "GET",
+        "description": "Returns all company articles, announcements, or blog posts.",
+        "authentication_required": false,
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": [
+            {
+              "id": "integer",
+              "title": "string",
+              "summary": "string",
+              "description": "string",
+              "images": "image url | null",
+              "article_type": "News | Breaking News | Advertisement | Discount | Notification",
+              "published_at": "datetime"
+            }
+          ]
+        }
+      }
+    ],
+
+    "investors_endpoints": [
+      {
+        "name": "List Investors",
+        "endpoint": "investors/",
+        "method": "GET",
+        "description": "Returns the list of investors supporting the company.",
+        "authentication_required": false,
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": [
+            {
+              "id": "integer",
+              "name": "string",
+              "icon": "image url | null",
+              "bio": "string",
+              "report": "file url | null"
+            }
+          ]
+        }
+      }
+    ],
+
+    "partnerships_endpoints": [
+      {
+        "name": "List Partnerships",
+        "endpoint": "partners/",
+        "method": "GET",
+        "description": "Returns all official company partnerships.",
+        "authentication_required": false,
+        "request_body": null,
+        "success_response": {
+          "status": 200,
+          "data": [
+            {
+              "id": "integer",
+              "name": "string",
+              "icon": "image url | null",
+              "description": "string",
+              "business_type": "string",
+              "link": "string"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

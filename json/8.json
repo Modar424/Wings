@@ -1,0 +1,11 @@
+{
+    "detail": "Application submitted successfully",
+    "application_id": 3,
+    "submitted_data": {
+        "full_name": "ahmad",
+        "email": "example@gmail.com",
+        "phone": "+963971465365",
+        "cv": null,
+        "message": "ahmad"
+    }
+}

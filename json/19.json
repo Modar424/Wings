@@ -1,0 +1,10 @@
+{
+    "id": 3,
+    "note": "this is note",
+    "created_at": "2026-03-12T05:56:11.760947Z",
+    "state": "canceled",
+    "is_payed": false,
+    "user": 2,
+    "special_assistance": 1,
+    "booking_flight": 1
+}

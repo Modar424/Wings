@@ -1,0 +1,9 @@
+[
+    {
+        "name": "partnership name",
+        "icon": "https://res.cloudinary.com/dfhr6s91p/image/upload/v1/company/partners/icons/unnamed_2",
+        "description": "partnership description",
+        "business_type": "type",
+        "link": "example.com"
+    }
+]

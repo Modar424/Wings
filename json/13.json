@@ -1,0 +1,16 @@
+{
+    "id": 3,
+    "flight_type": "one_direction",
+    "booking_date": "2026-03-22T18:22:07.113631Z",
+    "status": "PENDING",
+    "chears": 2,
+    "chears_checked_in_go": 2,
+    "chears_checked_in_back": null,
+    "chear_type": "Premium",
+    "price": "180.00",
+    "is_payed": false,
+    "updated_at": "2026-03-22T18:38:45.821178Z",
+    "user": 2,
+    "flight_go": 7,
+    "flight_back": null
+}
