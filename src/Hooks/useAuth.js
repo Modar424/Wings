@@ -151,54 +151,61 @@ export const useAuth = () => {
     setError('');
 
     try {
-      if (isSignUp) {
-        // تحويل التاريخ من YYYY-MM-DD إلى DD/MM/YYYY
-        let formattedBirthDate = formData.birth_date;
-        if (formattedBirthDate && formattedBirthDate.includes('-')) {
-          const [year, month, day] = formattedBirthDate.split('-');
-          formattedBirthDate = `${day}/${month}/${year}`;
-          console.log('📅 Date converted:', formData.birth_date, '→', formattedBirthDate);
-        }
+ if (isSignUp) {
+  // تحويل التاريخ
+  let formattedBirthDate = formData.birth_date;
+  if (formattedBirthDate && formattedBirthDate.includes('-')) {
+    const [year, month, day] = formattedBirthDate.split('-');
+    formattedBirthDate = `${day}/${month}/${year}`;
+    console.log('📅 Date converted:', formData.birth_date, '→', formattedBirthDate);
+  }
 
-        const jsonData = {
-          username: formData.username,
-          email: formData.email,
-          password1: formData.password,
-          password2: formData.password2,
-          birth_date: formattedBirthDate,
-          gender: formData.gender,
-          phone_number: formData.phone_number,
-          image: formData.image || null,
-        };
+  // استخدام FormData بدلاً من JSON
+  const formDataToSend = new FormData();
+  formDataToSend.append('username', formData.username);
+  formDataToSend.append('email', formData.email);
+  formDataToSend.append('password1', formData.password);
+  formDataToSend.append('password2', formData.password2);
+  formDataToSend.append('birth_date', formattedBirthDate);
+  formDataToSend.append('gender', formData.gender);
+  formDataToSend.append('phone_number', formData.phone_number);
+  
+  // إضافة الصورة إذا وجدت (كملف وليس base64)
+  if (formData.image && formData.image instanceof File) {
+    formDataToSend.append('image', formData.image);
+    console.log('🖼️ Image file attached:', formData.image.name);
+  } else {
+    console.log('🖼️ No image file attached');
+  }
 
-        console.log('📤 Sending registration data:', { ...jsonData, password1: '***', password2: '***' });
+  console.log('📤 Sending registration data via FormData');
 
-        const res = await fetch('/api/auth/user/register/', {
-          method: 'POST',
-          credentials: 'include',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(jsonData),
-        });
+  const res = await fetch('/api/auth/user/register/', {
+    method: 'POST',
+    credentials: 'include',
+    body: formDataToSend,  // المتصفح يضيف Content-Type: multipart/form-data تلقائياً
+  });
 
-        let data = {};
-        try {
-          data = await res.json();
-        } catch (e) {
-          console.error('Response not JSON:', e);
-          data = { detail: 'Server response error' };
-        }
+  let data = {};
+  try {
+    data = await res.json();
+  } catch (e) {
+    console.error('Response not JSON:', e);
+    data = { detail: 'Server response error' };
+  }
 
-        if (!res.ok) {
-          setError(parseError(data));
-          setLoading(false);
-          return;
-        }
-        
-        alert('✅ Account created successfully! Please sign in with your credentials.');
-        setIsSignUp(false);
-        resetForm();
-        setLoading(false);
-        return;
+  if (!res.ok) {
+    setError(parseError(data));
+    setLoading(false);
+    return;
+  }
+  
+  alert('✅ Account created successfully! Please sign in with your credentials.');
+  setIsSignUp(false);
+  resetForm();
+  setLoading(false);
+  return;
+
         
       } else {
         // تسجيل الدخول العادي
