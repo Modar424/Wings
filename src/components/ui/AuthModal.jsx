@@ -20,6 +20,21 @@ export const AuthModal = ({
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
+  // دالة مساعدة للتصحيح عند إرسال النموذج
+  const onSubmitWithDebug = (e) => {
+    console.log('🔵 === AUTH MODAL DEBUG ===');
+    console.log('🔵 isSignUp:', isSignUp);
+    console.log('🔵 Username value:', formData.username);
+    console.log('🔵 Email value:', formData.email);
+    console.log('🔵 Password value:', formData.password ? '***' : '(empty)');
+    console.log('🔵 Phone number:', formData.phone_number);
+    console.log('🔵 Birth date:', formData.birth_date);
+    console.log('🔵 Gender:', formData.gender);
+    console.log('🔵 Image:', formData.image instanceof File ? formData.image.name : (formData.image ? 'File present' : 'No file'));
+    console.log('🔵 ================================');
+    handleAuthSubmit(e);
+  };
+
   return (
     <AnimatePresence>
       {showAuthModal && (
@@ -63,11 +78,11 @@ export const AuthModal = ({
               </div>
             )}
 
-            <form onSubmit={handleAuthSubmit} className="space-y-4">
+            <form onSubmit={onSubmitWithDebug} className="space-y-4">
               {/* Username — always shown */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                  Username
+                  Username {!isSignUp && <span className="text-red-500">*</span>}
                 </label>
                 <div className="relative">
                   <FiUser className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
@@ -75,7 +90,10 @@ export const AuthModal = ({
                     type="text"
                     name="username"
                     value={formData.username}
-                    onChange={handleInputChange}
+                    onChange={(e) => {
+                      console.log('🔵 Username input changed:', e.target.value);
+                      handleInputChange(e);
+                    }}
                     required={!isSignUp}
                     autoComplete="username"
                     className="w-full pl-10 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all text-sm"
@@ -88,12 +106,18 @@ export const AuthModal = ({
               {isSignUp && (
                 <>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email *</label>
                     <div className="relative">
                       <FiMail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
                       <input
-                        type="email" name="email" value={formData.email}
-                        onChange={handleInputChange} required
+                        type="email" 
+                        name="email" 
+                        value={formData.email}
+                        onChange={(e) => {
+                          console.log('🔵 Email input changed:', e.target.value);
+                          handleInputChange(e);
+                        }}
+                        required
                         className="w-full pl-10 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all text-sm"
                         placeholder="Enter your email"
                       />
@@ -101,12 +125,18 @@ export const AuthModal = ({
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Phone Number</label>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Phone Number *</label>
                     <div className="relative">
                       <FiPhone className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
                       <input
-                        type="tel" name="phone_number" value={formData.phone_number}
-                        onChange={handleInputChange} required
+                        type="tel" 
+                        name="phone_number" 
+                        value={formData.phone_number}
+                        onChange={(e) => {
+                          console.log('🔵 Phone input changed:', e.target.value);
+                          handleInputChange(e);
+                        }}
+                        required
                         className="w-full pl-10 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all text-sm"
                         placeholder="+963111111111"
                       />
@@ -115,21 +145,31 @@ export const AuthModal = ({
 
                   <div className="grid grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Birth Date</label>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Birth Date *</label>
                       <div className="relative">
                         <FiCalendar className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
                         <input
-                          type="date" name="birth_date" value={formData.birth_date}
-                          onChange={handleInputChange} required
+                          type="date" 
+                          name="birth_date" 
+                          value={formData.birth_date}
+                          onChange={(e) => {
+                            console.log('🔵 Birth date changed:', e.target.value);
+                            handleInputChange(e);
+                          }}
+                          required
                           className="w-full pl-10 pr-2 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all text-sm"
                         />
                       </div>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Gender</label>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Gender *</label>
                       <select
-                        name="gender" value={formData.gender}
-                        onChange={handleInputChange}
+                        name="gender" 
+                        value={formData.gender}
+                        onChange={(e) => {
+                          console.log('🔵 Gender changed:', e.target.value);
+                          handleInputChange(e);
+                        }}
                         className="w-full px-3 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all text-sm"
                       >
                         <option value="Male">Male</option>
@@ -148,7 +188,10 @@ export const AuthModal = ({
                       <input
                         type="file"
                         name="image"
-                        onChange={handleInputChange}
+                        onChange={(e) => {
+                          console.log('🖼️ Image file selected:', e.target.files[0]?.name);
+                          handleInputChange(e);
+                        }}
                         accept="image/*"
                         className="w-full pl-10 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all text-sm file:mr-2 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-sm file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100 dark:file:bg-violet-900/30 dark:file:text-violet-400"
                       />
@@ -168,14 +211,17 @@ export const AuthModal = ({
 
               {/* Password - مع زر إظهار/إخفاء */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Password</label>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Password *</label>
                 <div className="relative">
                   <FiLock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
                   <input
                     type={showPassword ? 'text' : 'password'}
                     name="password"
                     value={formData.password}
-                    onChange={handleInputChange}
+                    onChange={(e) => {
+                      console.log('🔒 Password changed: (hidden)');
+                      handleInputChange(e);
+                    }}
                     required
                     autoComplete={isSignUp ? "new-password" : "current-password"}
                     className="w-full pl-10 pr-10 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all text-sm"
@@ -194,14 +240,17 @@ export const AuthModal = ({
               {/* Confirm password for signup - مع زر إظهار/إخفاء */}
               {isSignUp && (
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Confirm Password</label>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Confirm Password *</label>
                   <div className="relative">
                     <FiLock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
                     <input
                       type={showConfirmPassword ? 'text' : 'password'}
                       name="password2"
                       value={formData.password2}
-                      onChange={handleInputChange}
+                      onChange={(e) => {
+                        console.log('🔒 Confirm password changed: (hidden)');
+                        handleInputChange(e);
+                      }}
                       required
                       autoComplete="new-password"
                       className="w-full pl-10 pr-10 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all text-sm"
@@ -249,14 +298,22 @@ export const AuthModal = ({
             {/* Google Login Button */}
             <div className="flex justify-center">
               <GoogleLogin
-                onSuccess={handleGoogleSuccess}
-                onError={handleGoogleError}
+                onSuccess={(response) => {
+                  console.log('🔐 Google login button clicked, success');
+                  handleGoogleSuccess(response);
+                }}
+                onError={() => {
+                  console.log('❌ Google login button error');
+                  handleGoogleError();
+                }}
                 useOneTap
                 theme="filled_blue"
                 size="large"
-                width="100%"
+                width="300"
                 text="continue_with"
                 shape="rectangular"
+                 ux_mode="popup" 
+                  flow="auth-code"
               />
             </div>
 
