@@ -78,82 +78,76 @@ export const useAuth = () => {
     setFormData(prev => ({ ...prev, [name]: files ? files[0] : value }));
     console.log(`📝 Input changed: ${name} =`, files ? files[0]?.name : value);
   }, []);
+// ── Google Login Handler ─────────────────────────────────
+const handleGoogleSuccess = useCallback(async (accessToken) => {
+  console.log('🔐 Google access_token received:', accessToken);
+  setLoading(true);
+  setError('');
 
-  // ── Google Login Handler ─────────────────────────────────
-  const handleGoogleSuccess = useCallback(async (credentialResponse) => {
-    console.log('🔐 Google login success:', credentialResponse);
-    setLoading(true);
-    setError('');
+  try {
+    console.log('📤 Sending access_token to backend...');
+    
+    const response = await fetch(`${API_BASE_URL}/api/auth/user/google/`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      body: JSON.stringify({ 
+        access_token: accessToken,
+        provider: 'google'
+      }),
+    });
 
+    console.log('📡 Google auth response status:', response.status);
+    console.log('🍪 Set-Cookie header:', response.headers.get('set-cookie'));
+
+    let data = {};
     try {
-      const token = credentialResponse.credential;
-      
-      console.log('📤 Sending Google token to backend...');
-      
-   const response = await fetch(`${API_BASE_URL}/api/auth/user/google/`, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  credentials: 'include',
-  body: JSON.stringify({ 
-    access_token: token
-  }),
-});
-
-      console.log('📡 Google auth response status:', response.status);
-      console.log('🍪 Set-Cookie header:', response.headers.get('set-cookie'));
-
-      let data = {};
-      try {
-        data = await response.json();
-        console.log('📦 Google auth response data:', data);
-        if (data.non_field_errors) {
-  console.log('❌ Error details:', data.non_field_errors);
-}
-      } catch (e) {
-        console.error('Response not JSON:', e);
-        const text = await response.text();
-        console.error('Raw response:', text.substring(0, 500));
-        data = { detail: 'Server response error' };
-      }
-
-      if (!response.ok) {
-        console.error('❌ Google login failed:', data);
-        // عرض رسالة الخطأ التفصيلية
-        const errorMsg = data.non_field_errors?.[0] || data.detail || data.error || 'Google login failed';
-        setError(errorMsg);
-        setLoading(false);
-        return;
-      }
-
-      console.log('✅ Google login successful, fetching profile...');
-
-      const profileRes = await fetch(`${API_BASE_URL}/api/auth/user/profile/`, { 
-        credentials: 'include'
-      });
-
-      console.log('📋 Profile response status:', profileRes.status);
-
-      if (profileRes.ok) {
-        const profile = await profileRes.json();
-        console.log('📋 Profile fetched successfully:', profile);
-        setUser(profile);
-        setIsLoggedIn(true);
-      } else {
-        console.error('❌ Failed to fetch profile');
-        setUser({ username: data.user?.username || 'Google User' });
-        setIsLoggedIn(true);
-      }
-
-      setShowAuthModal(false);
-      resetForm();
-      
-    } catch (err) {
-      console.error('Google login error:', err);
-      setError('تعذّر الاتصال بالخادم، تحقق من اتصالك.');
-    } finally {
-      setLoading(false);
+      data = await response.json();
+      console.log('📦 Google auth response data:', data);
+    } catch (e) {
+      console.error('Response not JSON:', e);
+      const text = await response.text();
+      console.error('Raw response:', text.substring(0, 500));
+      data = { detail: 'Server response error' };
     }
-  }, []);
+
+    if (!response.ok) {
+      console.error('❌ Google login failed:', data);
+      const errorMsg = data.non_field_errors?.[0] || data.detail || data.error || 'Google login failed';
+      setError(errorMsg);
+      setLoading(false);
+      return;
+    }
+
+    console.log('✅ Google login successful, fetching profile...');
+
+    const profileRes = await fetch(`${API_BASE_URL}/api/auth/user/profile/`, { 
+      credentials: 'include'
+    });
+
+    console.log('📋 Profile response status:', profileRes.status);
+
+    if (profileRes.ok) {
+      const profile = await profileRes.json();
+      console.log('📋 Profile fetched successfully:', profile);
+      setUser(profile);
+      setIsLoggedIn(true);
+    } else {
+      console.error('❌ Failed to fetch profile');
+      setUser({ username: data.user?.username || 'Google User' });
+      setIsLoggedIn(true);
+    }
+
+    setShowAuthModal(false);
+    resetForm();
+    
+  } catch (err) {
+    console.error('Google login error:', err);
+    setError('تعذّر الاتصال بالخادم، تحقق من اتصالك.');
+  } finally {
+    setLoading(false);
+  }
+}, []);
 
   const handleGoogleError = useCallback(() => {
     console.error('❌ Google login failed');
