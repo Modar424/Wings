@@ -1,0 +1,8 @@
+1)npm install lucide-react
+2)npm install react-router-dom
+3) npm install gsap
+4) npm install boxicons --save
+5)npm install react-icons  
+6) npm install framer-motion   
+7)npm install -D tailwindcss@3 postcss autoprefixer
+>> npx tailwindcss init -p
